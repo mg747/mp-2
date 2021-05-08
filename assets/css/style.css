@@ -1,0 +1,28 @@
+/* Body styling */
+body {
+    font-family: arial, helvetica, sans-serif;
+    margin: 0;
+  }
+h1 {
+    color: #F0F8FF;
+    font-size: 50px;
+    font-family: timenewroman;
+    text-align: center;
+    height: 50px;
+    background-image: linear-gradient(rgb(44, 44, 78), gray);
+    text-transform: uppercase;
+  }
+  .text-uppercase {
+      text-transform: uppercase;
+  }  
+/* Navigation bar styling */
+.navbar {
+    font-size: large;
+    font-weight: 800;
+    background-color:#000;
+    color: #f1f1f1;
+  }
+  .navbar, ul li {
+    float: none;
+  }
+   
