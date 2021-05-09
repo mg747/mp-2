@@ -13,10 +13,12 @@
 <body>
   <!-- Here is our main header that is used across all the pages of our website -->
   <!-- logo -->
-  <div class="header">
-    <h1>GET FIT</h1>
-    <p>Health & Fitness Club</p>
-  </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <p>GET FIT</p>
+      <p class="small" style="color:white">Health & Fitness Club</p>
+    </div>
+    </div>
   <nav class="navbar navbar-expand-md bg-dark justify-content-center">
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
   <span class="navbar-toggler-icon"></span>
@@ -68,17 +70,19 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <h3>Agility</h3>
-            <p>Abs</p>
-            <p>Training</p>
+            <h3>Sport Brands</h3>
+            <p>Adidas</p>
+            <p>Nike</p>
+            <button class="botton">Shop</button>
           </div>
         </div>
       
         <div class="column">
           <div class="card">
-            <h3>Sport Brands</h3>
-            <p>Adidas</p>
-            <p>Nike</p>
+            <h3>Agility</h3>
+            <p>Training</p>
+            <p>Motivation</p>
+            <button class="botton">Learn More</button>
           </div>
         </div>
         
@@ -86,15 +90,17 @@
           <div class="card">
             <h3>Vitality</h3>
             <p>Focus</p>
-            <p>Stress Free</p>
+            <p>Lifestyle</p>
+            <button class="botton">Learn More</button>
           </div>
         </div>
         
         <div class="column">
           <div class="card">
             <h3>Energy</h3>
-            <p>Strenght</p>
-            <p>Stamina</p>
+            <p>Aspire</p>
+            <p>Focus</p>
+            <button class="botton">Learn More</button>
           </div>
         </div>
       </div>
@@ -118,6 +124,62 @@
           </div>
         </div>
         <br>
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <q>....,</q>
+            <p class="author">- John Doe</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>....,</q>
+            <p class="author">- Julie Hana</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>....,</q>
+            <p class="author">- Morgan Stan</p>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
         <div class="footer">
           <h3>©2021 GET FIT HEALTH & FITNESS CLUB</h3>
         </div>        
