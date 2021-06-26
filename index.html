@@ -1,186 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Health Club</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<title>Travel</title>
 </head>
 <body>
-  <div class="header">   
-    <!-- Navigation menu for access to other pages on the site -->
-    <nav class="navbar navbar-expand-md bg-light justify-content-between navbar-light">
-      <a class="navbar-brand" href="home.html" style="font-size: 35px;">GET FIT</a> 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-  <ul class="navbar-nav">
-   <li class="nav-item">
-    <a class="nav-link pl-O" href="member">Member</a>
-  </li>
-   <li class="nav-item">
-  <a class="nav-link" href="personal-trainer">Personal Trainer</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="healthy-diets">Healthy Diets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily-tips">Daily Tips</a>
-            </li>
-     </ul>
-      </div>
-  <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"></a>
-   <div class="navbar-collapse collapse dual-nav w-50 order-2">
-  <ul class="nav navbar-nav ml-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="workout-location">Workout Location</a>
-   </li>
-      <li class="nav-item">
-   <a class="nav-link" href="contact-us">Contact Us</a>
-      </li>
-    </ul>
-   </div>
-  </nav>
-  </div>
+    <!-- Navigation menu -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">VACA ZONE</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">CONTACT US</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- End of page (footer) is used across all the pages of our website -->
+<footer class="text-uppercase">
+  <div class=".container-fluid">
+    <br>                
+      <p>© 2021 Vaca Zone.</p>
+      <p>All rights reserved.</p> 
+    <br>
+    </div>  
+</footer>
+<!-- JS Popper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0FlPdp5mpb5g-r9nqCOm0IvuDT_ua3gI&callback=initMap"></script>
+<script src="assets/js/maps.js"></script>
   </body>
-  <!-- Here is our main header that is used across all the pages of our website -->
-  <!-- logo -->
-  <div class="hero-image">
-    <div class="hero-text">
-      <p style="color:white">Health & Fitness Club</p>
-      </div>
-      </div>
-      <div class="col-container">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action" style="color:red">Exercise</a>
-            <a href="#" class="list-group-item list-group-item-action" style="color:orangered">Workout Plan</a>
-            <a href="#" class="list-group-item list-group-item-action" style="color:green">Nutrition</a>
-          </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Sport Brands</h3>
-            <p>Adidas</p>
-            <p>Nike</p>
-            <button type="button" class="btn btn-outline-dark">Shop</button>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <h3>Agility</h3>
-            <p>Training</p>
-            <p>Motivation</p>
-            <button type="button" class="btn btn-outline-dark">Learn More</button>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <h3>Vitality</h3>
-            <p>Focus</p>
-            <p>Lifestyle</p>
-            <button type="button" class="btn btn-outline-dark">Learn More</button>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <h3>Energy</h3>
-            <p>Aspire</p>
-            <p>Focus</p>
-            <button type="button" class="btn btn-outline-dark">Learn More</button>
-          </div>
-        </div>
-      </div>
-      <br>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-4" style="background-color:white">
-              <h2>Exercise</h2>
-              <p>Workout Benefits</p>
-              <p>Elite Personal Trainer</p>  
-            </div>
-            <div class="col-4" style="background-color:papayawhip">
-              <h2>Nutrition</h2>
-            <p>Food Recipes</p>
-            <p>Healthy Diets</p>         
-            </div>
-            <div class="col-4" style="background-color:white">
-              <h2>On Demand Training Sections</h2>  
-            <p>Workout in one of our state of the art health and fitness center in your town.</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="slideshow-container">
-
-          <div class="mySlides">
-            <q>....,</q>
-            <p class="author">- John Doe</p>
-          </div>
-          
-          <div class="mySlides">
-            <q>....,</q>
-            <p class="author">- Julie Hana</p>
-          </div>
-          
-          <div class="mySlides">
-            <q>....,</q>
-            <p class="author">- Morgan Stan</p>
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-          
-          </div>
-          
-          <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-          
-          <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
-        <div class="footer">
-          <h3>©2021 GET FIT HEALTH & FITNESS CLUB</h3>
-        </div>        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+  </html>
