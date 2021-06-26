@@ -1,242 +1,37 @@
+@media(max-width: 639px) {
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 /* Body styling */
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
 body {
-  color: black;
-  font-family: arial, helvetica, sans-serif;
-  margin: 0;
-  background: #FFFFFF;
+  font-family: Roboto, sans-serif;
 }
-/* Header styling */
-.header {
-  overflow: hidden;
-  background-color:#000;
-  padding: 20px 10px;
-}
-.header a {
-  position: relative;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 24px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-.header a:hover {
-  background-color:#000;
-  color: silver;
-
+@media screen and (max-width: 943px){
 }
 /* Navigation bar styling */
-.navbar ul li a {
+.navbar {
+  font-weight: bold;
+  font-size: larger;
   text-align: center;
-  font-size: medium;
-  font-weight: 700;
-  background-color:#FFFFFF;
-  color: #000;
 }
 .navbar, ul li {
   float: none;
 }
-/* Navigation bar styling */
-/* Our home page hero image */
-/* Image and Its copyright belongs to Twenty One Pilot via https://tumblr.com/ */
-.hero-image {
-  background: url("https://cdn.pixabay.com/photo/2017/01/16/15/28/boxer-1984344_1280.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
+/* END OF PAGE Footer */
+.footer {
+  background: color #f1f1f1;
+  text-align: center;  
+  padding: 1em;
+  margin-top: 20px;
+  margin: 0 auto;
   position: relative;
 }
-/* Media querie */
-/* For mobile phones: */
-[class*="col-"] {
-width: 100%;
-}
-/* For tablets: */
-@media only screen and (min-width: 600px){
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
-}
-/* For desktop: */
-@media only screen and (min-width: 768px){
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}    
-}
-.list-group-item {
-  border: 1px solid #bbb; /* Green border */
-  background-color: #000; /* background */
+.footer, p {
   text-align: center;
-  font-size: larger;
-  color: #000; /* White text */
-  cursor: pointer; /* Pointer/hand icon */
-  display: block; /* Make the buttons appear below each other */
-
 }
-* {
-box-sizing: border-box;
-}
-/* Float four columns side by side */
-.column {
-float: left;
-width: 25%;
-padding: 0 10px;
-}
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-/* Clear floats after the columns */
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-.column {
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-}
-}
-/* Style the counter cards */
-.card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-padding: 16px;
-text-align: center;
-background-color:aliceblue;
-cursor: pointer;
-}
-.button {
-border-radius: 4px;
-background-color: #111;
-border: none;
-color: #FFFFFF;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
-transition: all 0.5s;
-cursor: pointer;
-margin: 5px;
-}
-
-.card .button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-
-.button span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-.button:hover span {
-padding-right: 25px;
-}
-
-.button:hover span:after {
-opacity: 1;
-right: 0;
-}
-/* Footer */
-.footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
-}
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-
-/* Slideshow container */
-.slideshow-container {
-position: relative;
-background: #f1f1f1f1;
-}
-
-/* Slides */
-.mySlides {
-display: none;
-padding: 80px;
-text-align: center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -30px;
-padding: 16px;
-color: #888;
-font-weight: bold;
-font-size: 20px;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-position: absolute;
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: white;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: rgb(199, 207, 199);
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color:#111;}
