@@ -45,19 +45,37 @@
   </div>
   <div class="col-container">
     <div class="list-group">
-      <a href="https://eventbrite.com/" target="_blank" class="list-group-item list-group-item-action">Events</a>
-      <a href="https://booking.com/" target="_blank" class="list-group-item list-group-item-action">Hotels</a>
-      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">Restaurants</a>
+      <a href="https://eventbrite.com/" target="_blank" class="list-group-item list-group-item-action">CITIES EVENTS</a>
+      <a href="https://booking.com/" target="_blank" class="list-group-item list-group-item-action">HOTELS</a>
+      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RESTAURANTS</a>
+      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RENT A CAR</a>
     </div>
     </div>
-  <br>
+  <div>  
+  <h2 id="large-font" style="color:midnightblue">Search Map for a location....</h2>
+  </div>
+  <div class="container-fluid"> 
+    <div id="map">
+      </div>
+      </div>
+      <div style="display: none">
+        <input
+          id="pac-input"
+          class="controls"
+          type="text"
+          placeholder="Enter a location"
+        />
+      </div> 
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->  
+<!-- End of page (footer) is used across all the pages of our website -->
+<br>
   <div class="container-fluid">
   <div class="row">
     <div class="column">
       <div class="card">
         <h3>AFRICA</h3>
-        <!-- Image linked from https://www.expedia.co.jp/-->
-        <img class="card-img-top" src=https://mediaim.expedia.com/localexpert/2713316/5927dd82-18f1-4694-bfc8-29448192951f.jpg?impolicyresizecrop&rw1005&rh565 alt="Ogun State, Nigeria">
+        <!-- Image linked from https://theculturetrip.com/-->
+        <img class="card-img-top" src=https://img.theculturetrip.com/768x/smart/wp-content/uploads/2019/10/pat052.jpg alt="Zanzibar Beach">
         <hr>
         <a href="https://www.cntraveller.com//" target="_blank" class="btn btn-dark">Explore</a>
       </div>
@@ -92,26 +110,6 @@
   </div>
   </div>
   <br>
-  <div class="container-fluid"> 
-    <div id="map">
-      </div>
-      </div>
-      <div style="display: none">
-        <input
-          id="pac-input"
-          class="controls"
-          type="text"
-          placeholder="Enter a location"
-        />
-      </div>
-      <div id="map"></div>
-      <div id="infowindow-content">
-        <span id="place-name" class="title"></span><br />
-        <strong>Place ID:</strong> <span id="place-id"></span><br />
-        <span id="place-address"></span>
-      </div> 
-<!-- Async script executes immediately and must be after any DOM elements used in callback. -->  
-<!-- End of page (footer) is used across all the pages of our website -->
 <footer class="text-uppercase">
   <div class=".container-fluid">
     <br>                
@@ -128,5 +126,6 @@
       async
     ></script>
 <script src="assets/js/maps.js"></script>
+<script src="assets/js/script.js" type="text/javascript"></script>
   </body>
   </html>
