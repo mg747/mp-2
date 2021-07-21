@@ -12,12 +12,13 @@
 <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 <title>Travel</title>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 <body>
     <!-- Navigation menu -->
     <nav class="navbar navbar-expand-md bg-light navbar-light">
       <!-- Brand -->
-      <a class="navbar-brand" href="index.html">VACA ZONE</a>
+      <a class="navbar-brand" href="index.html" style="font-size: 35px;">VACA ZONE</a>
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -38,23 +39,35 @@
   <div class="hero-image">
     <br>
     <div class="hero-text">
-      <h1 class="large-font" style="color:white">RESPONSIBLE TOURISM</h1>
-      <h2 class="large-font" style="color:goldenrod">Treat yourself to a city break in Europe</h2>
-      <a href="https://www.cntraveller.com/" target="_blank" class="btn btn-dark">Learn more</a>
+      <h1 class="text-center" style="color:goldenrod">RESPONSIBLE TOURISM</h1>
+  <a href="https://www.cntraveller.com/" target="_blank" class="btn btn-dark">Learn more</a>
   </div>
   </div>
   <div class="col-container">
     <div class="list-group">
-      <a href="https://eventbrite.com/" target="_blank" class="list-group-item list-group-item-action">CITIES EVENTS</a>
-      <a href="https://booking.com/" target="_blank" class="list-group-item list-group-item-action">HOTELS</a>
-      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RESTAURANTS</a>
-      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RENT A CAR</a>
+      <a href="https://eventbrite.com/" target="_blank" class="list-group-item list-group-item-action">EVENTS <i class="fas fa-calendar-week"></i></a>
+      <a href="https://booking.com/" target="_blank" class="list-group-item list-group-item-action">HOTELS <i class="fas fa-hotel"></i></a>
+      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RESTAURANTS <i class="fas fa-utensils"></i></a>
+      <a href="https://justeat.com/" target="_blank" class="list-group-item list-group-item-action">RENT A CAR <i class="fas fa-car"></i></a>
     </div>
     </div>
-  <div>  
-  <h2 id="large-font" style="color:midnightblue">Search Map for a location....</h2>
-  </div>
-  <div class="container-fluid"> 
+    <br>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+          <h2 class="text-center">Make a splash at the Atlantis Paradise Island</h2>
+    <img class="card-img-top" src=https://www.nassauparadiseisland.com/sites/default/files/styles/slideshow_xl/public/images/listings/hero/see-do-day-passes-aquaventure-day-pass.jpg?itokRLgNbmnB alt="Atlantis Paradise">
+    <a href="https://www.cntraveller.com/" target="_blank" class="btn btn-dark">Learn more</a>
+    </div>
+    <div class="col-sm-6">
+          <h2 class="text-center">Visit the Louvre, Abu Dhabi</h2>
+    <img class="card-img-top" src=https://visitabudhabi.ae/-/media/project/vad/galleryimages/resized101/louvre-abu-dhabi/louvre-abu_dhabi-01.jpg alt="The Louvre, Abu Dhabi">
+    <a href="https://www.cntraveller.com/" target="_blank" class="btn btn-dark">Learn more</a>
+    </div>
+    </div>
+    </div>
+  <div class="container-fluid">
+    <h2 id="large-font" style="color:midnightblue">Search Map for a location....</h2> 
     <div id="map">
       </div>
       </div>
@@ -126,6 +139,5 @@
       async
     ></script>
 <script src="assets/js/maps.js"></script>
-<script src="assets/js/script.js" type="text/javascript"></script>
   </body>
   </html>
