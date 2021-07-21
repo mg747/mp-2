@@ -40,7 +40,7 @@ body {
 }
 .btn {
   background-color: white;
-  border: 1px solid orangered;
+  border: 1px solid black;
   color: black;
   padding: 10px 20px;
   text-align: center;
@@ -51,14 +51,14 @@ body {
   border-radius: 16px;
 }
 .list-group-item {
-  border: 1px solid #bbb; /* Green border */
-  background-color: #000; /* background */
+  border: 1px solid green; /* Green border */
+  background-color: black; /* background */
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
+  font-weight: blod;
   color: #f1f1f1; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   display: block; /* Make the buttons appear below each other */
-
 }
 div#map {min-height: 360px;
 }
@@ -178,19 +178,15 @@ div#map {min-height: 360px;
   text-overflow: ellipsis;
   width: 400px;
 }
-
 .controls:focus {
   border-color: #4d90fe;
 }
-
 .title {
   font-weight: bold;
 }
-
 #infowindow-content {
   display: none;
 }
-
 #map #infowindow-content {
   display: inline;
 }
@@ -205,4 +201,40 @@ div#map {min-height: 360px;
 }
 .footer, p {
   text-align: center;
+}
+/* Email newsletter form styling */
+form {
+  border: 3px solid #f1f1f1;
+  font-family: arial;
+}
+.container {
+  padding: 20px;
+  background-color:#f1f1f1;
+  color: #000;
+  text-align: left;
+}
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  margin-top: 16px;
+}
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
